@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+    <defName>Alien_Leeani</defName>
+    <label>leeani</label>
+    <description>After escaping a military experiment millenia ago, Leeani have made themselves a prominent presence in the galactic stage. Originally mundane foxes, their genetic modifications that have stuck with them have allowed the Leeani many opportunities in a growing universe.</description>
+	<alienRace>
+	  <generalSettings>
+		<maleGenderProbability>0.5</maleGenderProbability>
+        <humanRecipeImport>true</humanRecipeImport>
+	    <allowHumanBios>true</allowHumanBios>
+		<immuneToAge>false</immuneToAge>		
+			<disallowedTraits>
+               <li>
+						<defName>BodyPurist</defName>
+						<chance>100</chance>
+					</li>
+            </disallowedTraits>
+             <forcedRaceTraitEntries>
+					<li>
+						<defName>NaturalMood</defName>
+						<degree>2</degree>
+						<chance>50</chance>
+					</li>
+					<li>
+						<defName>Beauty</defName>
+						<degree>2</degree>
+						<chance>30</chance>
+					</li>
+					<li>
+						<defName>Beauty</defName>
+						<degree>1</degree>
+						<chance>30</chance>
+					</li>
+					<li>
+						<defName>Kind</defName>
+						<chance>50</chance>
+					</li>
+					<li>
+						<defName>LeeaniPacifist</defName>
+						<chance>70</chance>
+					</li>
+					<li>
+						
+						<defName>Transhumanist</defName>
+						<chance>10</chance>
+					</li>
+				</forcedRaceTraitEntries>
+	    <alienPartGenerator>
+		  <bodyTypes Inherit="False">
+						<li>Thin</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+  						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+					</bodyTypes>
+					<headTypes Inherit="False">
+						<li>LMAverage_Normal</li>
+						<li>LFAverage_Normal</li>		
+					</headTypes>
+	      
+<colorChannels>
+					<li>
+						<name>skin</name>
+                        <first Class="ColorGenerator_Options">
+                                <options><!--Skin Colors--> 
+				<!-- normal orange -->
+                                <li>					
+                                    <weight>95</weight>
+                                    <only>RGBA(0.807, 0.486, 0.0,1.0)</only>
+                                </li>
+				<!-- rare red -->
+                                <li>					
+                                    <weight>1</weight>
+                                    <only>RGBA(0.658, 0.133, 0.0,1.0)</only>
+                                </li>
+				<!-- rare white -->
+                                <li>					
+                                    <weight>1</weight>
+                                    <only>RGBA(0.862, 0.858, 0.858,1.0)</only>
+                                </li>
+				<!-- rare grey -->
+                                <li>					
+                                    <weight>1</weight>
+                                    <only>RGBA(0.309, 0.309, 0.309,1.0)</only>
+                                </li>
+				<!-- rare black -->
+                                <li>					
+                                    <weight>1</weight>
+                                    <only>RGBA(0.058, 0.047, 0.043,1.0)</only>
+                                </li>
+				<!-- rare brown -->
+                                <li>					
+                                    <weight>1</weight>
+                                    <only>RGBA(0.294, 0.156, 0.086,1.0)</only>
+                                </li>					
+                                </options>
+                            </first>
+							
+                            <second Class="ColorGenerator_Options">
+                                <options>
+                                    <li>
+					<!--red-->
+                                        <weight>33</weight>
+                                        <only>RGBA(0.721, 0.023, 0.023,1.0)</only>
+                                    </li>
+				    <li>
+					<!--green-->
+                                        <weight>33</weight>
+                                        <only>RGBA(0.074, 0.388, 0.082,1.0)</only>
+                                    </li>
+				    <li>
+					<!--yellow-->
+                                        <weight>33</weight>
+                                        <only>RGBA(0.976, 0.964, 0.043,1.0)</only>
+                                    </li>
+                                </options>
+                            </second>
+							</li>
+                    </colorChannels>
+
+<bodyAddons>
+						<li>
+							<path>Things/Leeani/Tails/TailL</path>
+							<bodyPart>LeeaniTail</bodyPart>							
+							<colorChannel>skin</colorChannel>
+							<inFrontOfBody>false</inFrontOfBody>
+							<drawnInBed>false</drawnInBed>
+							<drawnOnGround>true</drawnOnGround>
+							<defaultOffset>Tail</defaultOffset>
+					<bodytypeGraphics>
+				<Baby>Things/Leeani/Tails/TailL_Child</Baby>
+	<Child>Things/Leeani/Tails/TailL_Child</Child>
+		</bodytypeGraphics>
+							<offsets>
+								<south>
+									<bodyTypes>										
+										<Baby>(0,0)</Baby>
+										<Child>(0,0)</Child>
+										<Thin>(-0.44, 0.22)</Thin>
+									</bodyTypes>
+								</south>
+								<north>
+									<bodyTypes>										
+										<Baby>(0,0)</Baby>
+										<Child>(0,0)</Child>
+										<Thin>(-0.07,-0.33)</Thin>
+									</bodyTypes>
+								</north>
+								<east>
+									<bodyTypes>										
+										<Baby>(0,0)</Baby>
+										<Child>(0,0)</Child>
+										<Thin>(0.30,-0.42)</Thin>
+									</bodyTypes>
+								</east>
+								<west>
+									<bodyTypes>
+										<Baby>(0,0)</Baby>
+										<Child>(0,0)</Child>										
+										<Thin>(0.30,-0.42)</Thin>
+									</bodyTypes>
+								</west>
+							</offsets>								
+						</li>
+					</bodyAddons>		</alienPartGenerator>		
+	  </generalSettings>
+	  
+	  <styleSettings>
+        <li>
+          <key>HairDef</key>
+          <value>
+            <hasStyle>false</hasStyle>                			
+          </value>
+        </li>
+        <li>
+          <key>BeardDef</key>
+          <value>
+            <hasStyle>false</hasStyle>
+          </value>
+        </li>
+		<li>
+	      <key>TattooDef</key>
+	      <value>
+	 	    <hasStyle>false</hasStyle>
+	      </value>
+		</li>
+    </styleSettings>
+
+  <graphicPaths>               
+	<skinShader>Cutout</skinShader>
+	<body>
+    <path>Things/Leeani/Body/</path>
+    <bodytypeGraphics>
+      <Thin>Things/Leeani/Body/Naked_Thin</Thin>	
+	<Baby>Things/Leeani/Body/Naked_Child</Baby>
+	<Child>Things/Leeani/Body/Naked_Child</Child>	      
+    </bodytypeGraphics>
+  </body>
+
+	<head>
+    <path>Things/Leeani/Head/</path>
+    <headtypeGraphics>
+      <LMAverage_Normal>Things/Leeani/Head/LMAverage_Normal</LMAverage_Normal>
+      <LFAverage_Normal>Things/Leeani/Head/LFAverage_Normal</LFAverage_Normal>	 	      
+    </headtypeGraphics>
+  </head>
+                          
+        </graphicPaths>         
+	
+<thoughtSettings>
+				<cannotReceiveThoughts>
+					<li>AteRawFood</li>
+					<li>SleptOnGround</li>
+					<li>SleptOutside</li>
+					<!-- foxes are semi-nocturnal animals who rely more on nose and ears, so they are okay with being in darkness -->
+					<li>EnvironmentDark</li>
+					<!-- being somewhat poorly engineered race, they won't mind improving their bodies -->
+					<!--<li>NonProsthophileHasAddedBodyParts</li>-->
+				</cannotReceiveThoughts>
+			</thoughtSettings>
+
+	  <raceRestriction>
+
+	<traitList>
+  <li>LeeaniPacifist</li>
+</traitList>	
+
+<apparelList>
+					<li>LeeaniBycocket</li>
+				</apparelList>
+				<researchList>
+					<li>
+						<projects>							
+							<li>LeeaniTraditions</li>
+							<li>LeeaniArkhaev</li>
+						</projects>
+					</li>
+				</researchList>			
+
+<blackXenotypeList>
+  <li>Dirtmole</li>
+  <li>Genie</li>
+<li>Hussar</li>
+<li>Sanguophage</li>
+<li>Neanderthal</li>
+<li>Pigskin</li>
+<li>Impid</li>
+<li>Waster</li>
+<li>Yttakin</li>
+<li>Highmate</li>
+</blackXenotypeList>
+
+ <blackGeneList>
+          <li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">FacialRidges</li>
+        </blackGeneList>
+        <blackGeneTags>
+          <li>SkinColor</li>
+          <li>HairColor</li>
+          <li>EyeColor</li>
+          <li>BodyType</li>
+          <li>Ears</li>
+          <li>Nose</li>
+          <li>Jaw</li>
+          <li>Head</li>
+          <li>Headbone</li>
+          <li>HairStyle</li>
+          <li>BeardStyle</li>
+          <li>SkinColorOverride</li>
+          <li>Fur</li>
+          <li>Tail</li>
+        </blackGeneTags>
+        <blackEndoCategories>
+          <li>Melanin</li>
+          <li>HairColor</li>
+          <li>Ears</li>
+          <li>Nose</li>
+          <li>Jaw</li>
+          <li>Head</li>
+          <li>BodyType</li>
+        </blackEndoCategories>
+
+<whiteReproductionList>
+  <li>Alien_Leeani</li> 
+</whiteReproductionList>
+
+<onlyReproduceWithRestrictedRaces>true</onlyReproduceWithRestrictedRaces> 
+			</raceRestriction>
+				  
+	</alienRace>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+			<MoveSpeed>5.65</MoveSpeed>
+			<Flammability>0.2</Flammability>
+			<ComfyTemperatureMin>-7</ComfyTemperatureMin>
+			<ComfyTemperatureMax>27</ComfyTemperatureMax>
+			<LeatherAmount>50</LeatherAmount>
+			<PsychicSensitivity>1.25</PsychicSensitivity>
+			<MiningSpeed>0.8</MiningSpeed>
+			<!--<TrapSpringChance>0.02</TrapSpringChance>-->
+			<RoyalFavorValue>2</RoyalFavorValue>
+    </statBases>
+     <tools>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6.15</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6.15</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>10.0</power>
+				<cooldownTime>2.0</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2.0</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.07</chanceFactor>
+			</li>
+		</tools>
+    <race>
+      <thinkTreeMain>Humanlike</thinkTreeMain>
+      <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+      <intelligence>Humanlike</intelligence>
+      <makesFootprints>true</makesFootprints>
+      <lifeExpectancy>60</lifeExpectancy>
+      <leatherDef>Leather_Leeani</leatherDef>
+      <nameGenerator>NamerPersonLeeani</nameGenerator>
+      <nameGeneratorFemale>NamerPersonLeeani</nameGeneratorFemale>
+      <body>Leeani</body>
+      <foodType>OmnivoreHuman</foodType>
+<baseBodySize>0.9</baseBodySize>
+			<baseHealthScale>0.9</baseHealthScale>
+      <gestationPeriodDays>15</gestationPeriodDays>      
+      <manhunterOnDamageChance>0.50</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0</manhunterOnTameFailChance>      
+      <bloodDef>FilthBloodLeeani</bloodDef>
+      <meatColor>(0, 0, 128)</meatColor>
+      <meatMarketValue>0.5</meatMarketValue>  
+      <litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(2, 1)</li>
+					<li>(3, 0.3)</li>
+					<li>(3.1, 0)</li>
+				</points>
+			</litterSizeCurve>      
+      <lifeStageAges>
+        <li>
+          <def>HumanlikeBaby</def>
+          <minAge>0</minAge>
+        </li>        
+        <li>
+          <def>HumanlikeChild</def>
+          <minAge>2</minAge>
+        </li>
+        <li>
+          <def>HumanlikeTeenager</def>
+          <minAge>13</minAge>
+        </li>
+        <li>
+          <def>HumanlikeAdult</def>
+          <minAge>18</minAge>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+      <specialShadowData>
+        <volume>(0.3, 0.8, 0.4)</volume>
+        <offset>(0,0,-0.3)</offset>
+      </specialShadowData>
+      <ageGenerationCurve>
+        <points>
+	 <li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
+    <li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
+    <li MayRequire="Ludeon.RimWorld.Biotech">(8,86)</li>
+    <li MayRequire="Ludeon.RimWorld.Biotech">(12.5,118)</li>  <!-- Exclude 12.5-13 years to avoid spawning pawns who are very close to becoming adults -->  
+    <li MayRequire="Ludeon.RimWorld.Biotech">(12.51,0)</li>  
+    <li MayRequire="Ludeon.RimWorld.Biotech">(13,0)</li>      
+    <li MayRequire="Ludeon.RimWorld.Biotech">(13.001,122)</li><!-- End exclude -->
+    <li MayRequire="Ludeon.RimWorld.Biotech">(13.999,130)</li>
+    <li>(14,0)</li>
+    <li MayRequire="Ludeon.RimWorld.Biotech">(14.001,130)</li>
+    <li>(16,100)</li>
+          <li>(20,0)</li>
+          <li>(23,100)</li>
+          <li>(26,100)</li>
+          <li>(27,30)</li>
+          <li>(30,18)</li>
+          <li>(40,10)</li>
+          <li>(40,3)</li>
+          <li>(50,0)</li>
+        </points>
+      </ageGenerationCurve>
+      <hediffGiverSets>
+        <li>OrganicStandard</li>
+      </hediffGiverSets>
+    </race>    
+  </AlienRace.ThingDef_AlienRace>
+
+</Defs>

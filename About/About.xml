@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Leeani Playable Race (Continued)</name>
+	<packageId>zal.leeani</packageId>
+	<author>Zaljerem</author>
+	<url></url>
+	<supportedVersions>		
+		<li>1.4</li>
+		<li>1.5</li>
+		<li>1.6</li>
+	</supportedVersions>
+<modVersion IgnoreIfNoMatchingField="True">1.1.0</modVersion>
+	<modDependencies>
+	  <li>
+		<packageId>erdelf.HumanoidAlienRaces</packageId>
+		<displayName>Humanoid Alien Races</displayName>
+		<steamWorkshopUrl>https://github.com/erdelf/AlienRaces/wiki</steamWorkshopUrl>
+	  </li>
+	</modDependencies>
+	<loadAfter>
+		<li>erdelf.HumanoidAlienRaces</li>
+		<li>syrchalis.processor.framework</li>
+	</loadAfter>	
+	<description>
+Original mod by MikeRobe
+https://github.com/quicksilverfox/RimworldMods/releases/latest
+https://steamcommunity.com/sharedfiles/filedetails/?id=1542414306
+If the original author requests it, I will remove this update.
+
+--
+
+Replaced old fermenter code with [SYR] Processor Framework ... not a hard requirement, but you won't have the cider and wine production buildings without it.
+
+--
+
+Original mod notes (1.2):
+
+A nice happy race of people-foxes. Alien Race Framework required, load after it. Built-in support for EPOE.
+
+Relationships incompatible with Psychology - not my fault, can't fix on my end.
+
+Adds Faction, starting Scenario, playable Race, Throne, Quarterstaff and Bycocket (Robin Hood Hats).
+
+Plenty of backstories, as well as names. Suggestions? Find @MikeRobe on the Rimworld Discord.
+</description>
+</ModMetaData>

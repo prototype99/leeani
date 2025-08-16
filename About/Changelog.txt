@@ -1,0 +1,23 @@
+1.0.0 - 1/30/2024 - updated from 1.2 to 1.4
+
+1.0.1 - 2/2/2024 - fixes ... with more to come
+
+1.0.2 - 2/5/2024 - back in the oven for a bit more cooking
+
+1.0.3 - 2/5/2024 - issues resolved?
+
+1.0.4 - 2/5/2024 - updated color generator - in addition to original orange, added rare red, grey, brown, black, and white
+
+1.0.5 - 2/7/2024 - update to bycocket (now colorable), Royalty player faction patch, more names
+
+1.0.6 - 2/7/2024 - texture fixes to cider/wine/juice
+
+1.0.7 - 2/14/2024 - fixes to body
+
+1.0.8 - 3/20/2024 - updated to 1.5
+
+1.0.9 - 9/29/2024 - added MayRequire to some race settings
+
+1.1.0 - 4/25/2025 - updated to 1.6
+
+
