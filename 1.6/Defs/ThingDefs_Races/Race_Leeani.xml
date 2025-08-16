@@ -239,8 +239,6 @@
 					<li>AteRawFood</li>
 					<li>SleptOnGround</li>
 					<li>SleptOutside</li>
-					<!-- foxes are semi-nocturnal animals who rely more on nose and ears, so they are okay with being in darkness -->
-					<li>EnvironmentDark</li>
 					<!-- being somewhat poorly engineered race, they won't mind improving their bodies -->
 					<!--<li>NonProsthophileHasAddedBodyParts</li>-->
 				</cannotReceiveThoughts>
